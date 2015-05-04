@@ -1,0 +1,5 @@
+bind:
+  build: .
+  command: bind
+  volumes:
+    - data/bind:/data
