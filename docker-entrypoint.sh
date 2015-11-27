@@ -2,8 +2,7 @@
 
 # bind entrypoint
 if [ "$1" = 'bind' ]; then
-    /usr/sbin/named -u ccg-user -g -t /data
-    exit $?
+    exec /usr/sbin/named -u ccg-user -g -t /data
 fi
 
 exec "$@"
