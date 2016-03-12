@@ -19,7 +19,7 @@ docker pull ${image} || true
 
 # build
 docker build ${DOCKER_BUILD_OPTIONS} -t ${image} .
-docker tag ${image} ${image}-${DATE}
+docker build ${DOCKER_BUILD_OPTIONS} -t ${image}-${DATE} .
 
 docker inspect ${image}
 
