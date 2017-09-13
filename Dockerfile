@@ -1,6 +1,6 @@
 #
-FROM debian:8
-MAINTAINER https://github.com/muccg
+FROM debian:jessie
+LABEL maintainer "https://github.com/muccg"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   bind9 \
