@@ -9,7 +9,7 @@ services:
   prod:
     build:
       context: ./
-    image: muccg/bind:jessie
+    image: muccg/bind:stretch
 
   latest:
     extends:

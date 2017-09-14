@@ -1,5 +1,5 @@
 #
-FROM debian:jessie
+FROM debian:stretch
 LABEL maintainer "https://github.com/muccg"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
