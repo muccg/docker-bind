@@ -1,6 +1,11 @@
 #
-FROM debian:stretch
+FROM debian:stretch-slim
 LABEL maintainer "https://github.com/muccg"
+
+RUN addgroup --gid 1000 bind \
+    && adduser --disabled-password --home /data --no-create-home --system -q --uid 1000 --ingroup bind bind \
+    && mkdir /data \
+    && chown bind:bind /data
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   bind9 \
