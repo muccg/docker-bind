@@ -1,5 +1,5 @@
 #
-FROM debian:jessie-slim
+FROM debian:stretch-slim
 LABEL maintainer "https://github.com/muccg"
 
 RUN addgroup --gid 1000 bind \
